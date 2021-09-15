@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Kvothe's Books</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="styles.css"/>
+    <script src="script.js"></script>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="mainBodyImageBlock">
+        <div class="bg-nav-dark" id="navbarbg"></div>
+
+        <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">Kvothe's Books</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+                        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="navbarText">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">News</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Books</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Events</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="mainBodyImageBlockHeight">
+            <div class="container">
+                <div class="mainBodyImageBlockContent">
+                    <div class="mainBodyImageBlockContentBG"></div>
+                    <div class="mainBodyImageBlockContentData">
+                        <h1>You haven't read anything yet.</h1>
+                        <p>They say outside of a dog, a book is a man's best friend (inside of a dog it's too dark to
+                            read). Come in, chat with us, share your favourite books & Films and we'll introduce you to
+                            some of the greatest friends you'll ever know.</p>
+                        <div class="centeralign">
+                            <button type="button" class="btn btn-success">Come visit us!</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row searchBar">
+            <div class="col-md-4"></div>
+            <div class="col-md-8">
+                <form class="form-inline">
+
+                    <div class="form-group">
+                        <label for="searchfield" class="sr-only">Search</label>
+                        <input type="text" class="form-control" id="searchfield" placeholder="Search...">
+                    </div>
+                    <button type="button" class="btn btn-success form-group" onclick="openSearch()">Search</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="row searchResultsRow" id="searchResultsRecords"></div>
+    </div>
+    <div class="footer">
+        <div class="container">2021 Created by Harish Koniki</div>
+    </div>
+    <div class="overlay" id="overlay"></div>
+    <div class="overlayText" id="overlayText">search results loading.....</div>
+</div>
+</body>
+</html>

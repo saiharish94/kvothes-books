@@ -1,0 +1,167 @@
+
+.container-fluid {
+    padding: 0px;
+    position: relative;
+}
+
+.mainBodyImageBlock {
+    background-image: url("https://raw.githubusercontent.com/Firebrand/imageshare/master/kvothebooks.jpg");
+    height: 100%;
+    background-repeat: no-repeat;
+    padding-top: 150px;
+}
+
+.mainBodyImageBlockHeight {
+    height: 350px
+}
+
+.mainBodyImageBlockContent {
+    width: 425px;
+    margin: 0;
+    color: white;
+    position: relative;
+}
+
+.mainBodyImageBlockContentBG {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.7;
+    z-index: 0;
+}
+
+.mainBodyImageBlockContentData {
+    z-index: 1;
+    position: relative;
+    padding: 20px;
+}
+
+.centeralign {
+    text-align: center
+}
+
+#navbarText ul {
+    float: right;
+}
+
+.bg-nav-dark {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 60px;
+    z-index: 1029;
+    background-color: black;
+    opacity: 0.7;
+}
+
+.searchBar {
+    margin: 20px 0px 20px 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: gray;
+    text-align: center;
+}
+
+.searchBar .form-inline {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.searchBar .form-group {
+    margin-bottom: 0px;
+}
+
+.searchResults {
+    border: 1px solid #c2c2c2;
+    margin-bottom: 15px;
+    height: 178px;
+    overflow: hidden;
+}
+
+.searchResultsImg {
+    float: left;
+    width: 50%;
+}
+
+.searchResultsContent {
+    float: left;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 45%;
+    margin-left: 3%;
+    font-size: 0.7rem;
+}
+
+.searchResultsContentAuthor {
+    font-size: 0.7rem;
+    padding-bottom: 10px;
+}
+
+.searchResultsContentTitle {
+    font-size: 1.2rem;
+    line-height: 20px;
+}
+
+.searchResultsImg img {
+    height: 178px;
+    width: 100%;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.overlay {
+    position: absolute;
+    height: 100%;
+    top: 0px;
+    width: 100%;
+    background: black;
+    z-index: 90000;
+    opacity: 0.7;
+    display: none;
+}
+
+.overlayText {
+    position: absolute;
+    top: 30%;
+    left: 45%;
+    color: white;
+    z-index: 90001;
+    display: none;
+}
+
+@media only screen and (max-width: 991px) {
+    #navbarText {
+        display: none;
+    }
+
+    .mainBodyImageBlockContent {
+        width: 100%;
+    }
+
+    .mainBodyImageBlockHeight .container {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .searchResults {
+        margin-bottom: 0px;
+    }
+
+    .mainBodyImageBlock {
+        background-position: top left;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .mainBodyImageBlock {
+        background-position: top;
+        background-size: cover;
+    }
+}
